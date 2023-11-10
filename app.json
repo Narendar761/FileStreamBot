@@ -38,14 +38,14 @@
           "description": "The BIN Channel ID. Read the readme for more info about this var"
           
       },
-      "DATABASE_URL": {
-          "description": "MongoDB URI for saving User IDs when they first Start the Bot. We will use that for Broadcasting to them. I will try to add more features related with Database. If you need help search for a tutorial on youtbe"
+      "ALLOWED_USER_IDS": {
+          "description": "ALLOWED_USER_IDS"
       },
       "OWNER_ID": {
           "description": "Your Telegram User ID  like 1234509"
       },
-      "BANNED_CHANNELS": {
-          "description": "Put IDs of Banned Channels where bot will not work. You can add multiple IDs & separate with Space.",
+      "CHANNEL_ID": {
+          "description": "Put CHANNEL_ID",
           "required": false
       },
       "UPDATES_CHANNEL": {
@@ -54,15 +54,16 @@
           "required": false
           
       },
-      "OWNER_USERNAME": {
+      "BOT_USERNAME": {
           "description": "Enter your username without @  example  adarsh."
       },
       "SLEEP_THRESHOLD": {
           "description": "Floodwait Sleep timer. Read the readme for more info about this var",
           "required": false
       },
-      "WORKERS": {
+      "BOT_WORKERS": {
           "description": "No. of workers that is to be assigned. Read the readme for more info about this var",
+          "value":"10",
           "required": false
       },
       "PORT": {
@@ -70,19 +71,19 @@
           "value": "8080",
           "required": false
       },
-      "NO_PORT": {
+      "BASE_URL": {
           "description": "If you don't want your port to be displayed. Read the readme for more info about this var",
-          "value": "False",
+          "value": "http://127.0.0.1:8080",
           "required": false
       },
-      "HAS_SSL": {
-          "description": "Default value is True",
-          "value": "True",
+      "SECRET_CODE_LENGTH": {
+          "description": "Default value is 12",
+          "value": "12",
           "required": false
       },
-       "MY_PASS": {
+       "BIND_ADDRESS": {
           "description": "Leave empty if dont need password else enter Your Password",
-          "value": "None",
+          "value": "0.0.0.0",
           "required": false
       },
       "BIND_ADRESS": {
